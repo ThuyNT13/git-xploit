@@ -1,6 +1,7 @@
 CURRENT=$(date +"%Y")
-Y=$(($CURRENT - 1))
+START_Y=$(($CURRENT - 1))
 END_Y=$(($CURRENT + 1))
+Y=START_Y
 
 while ((Y<=END_Y))
 do
@@ -30,8 +31,8 @@ do
   ((Y++))
 done
 git push
+git rm -rf $START_Y
 git rm -rf $CURRENT
-git rm -rf $Y
 git rm -rf $END_Y
 git commit -am "cleanup"
 git push
