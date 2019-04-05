@@ -1,4 +1,4 @@
-for Y in {2000..2019}
+for Y in {2000..2002}
 do
   mkdir $Y
   cd $Y
@@ -24,7 +24,7 @@ do
   done
   cd ../
 done
-git push origin master
+git push
 git rm -rf 20**
 git commit -am "cleanup"
-git push origin master
+git push
