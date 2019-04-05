@@ -15,10 +15,10 @@ Eventually will have GitHub Octocat running as [gitfiti art](https://github.com/
 
 This can take a reeeeeally looooong time as it creates a lot of commits so probably best to run overnight. It's also going to take a while for the commits to be generated to GitHub's commit history. 
 
-## Support
+## Issues
 
-Please open or respond to [an issue](https://github.com/ThuyNT13/git-xploit/issues) for support.
+Please open or respond to [an issue](https://github.com/ThuyNT13/git-xploit/issues) for support or you can just follow the issues that I'm tracking and addressing.
 
 ## Contributing
 
-Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and open a [pull request](https://github.com/ThuyNT13/git-xploit/pulls). Don't push to master.
+Please contribute using [Github Flow](https://guides.github.com/introduction/flow/). Create a branch, add commits, and open a [pull request](https://github.com/ThuyNT13/git-xploit/pulls). Please, don't push to master.
