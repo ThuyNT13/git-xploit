@@ -1,6 +1,6 @@
 Because I wanted to see how github history can be exploited and I was reading [How to Hack GitHub (kind of)](https://hackernoon.com/how-to-hack-github-kind-of-12b08a46d02e). I'm not purposefully doing this to be deceptive, but more just to play and learn how things can be exploited. 
 
-Eventually will have GitHub Octocat running as [gitfiti art](https://github.com/ThuyNT13/gitfiti) soon with the following [template]() because who doesn't want octocat to populate their git history.
+Eventually will have GitHub Octocat running as [gitfiti art](https://github.com/ThuyNT13/gitfiti) soon with the following because who doesn't want octocat to populate their git history.
 
 ```js
 :template
