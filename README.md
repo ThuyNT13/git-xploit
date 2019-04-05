@@ -17,7 +17,7 @@ This can take a reeeeeally looooong time as it creates a lot of commits so proba
 
 ## Issues
 
-Please open or respond to [an issue](https://github.com/ThuyNT13/git-xploit/issues) for support or you can just follow the issues that I'm tracking and addressing.
+Follow the issues that I'm tracking. Feel free to open or respond to [an issue](https://github.com/ThuyNT13/git-xploit/issues).
 
 ## Contributing
 
