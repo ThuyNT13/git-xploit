@@ -1,4 +1,8 @@
-for Y in {2000..2002}
+CURRENT=$(date +"%Y")
+START_Y=$(($CURRENT - 1))
+END_Y=$(($CURRENT + 1))
+
+for ((Y=START_Y; Y<=END_Y; Y++))
 do
   mkdir $Y
   cd $Y
