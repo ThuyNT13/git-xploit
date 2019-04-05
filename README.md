@@ -2,18 +2,38 @@ Because I wanted to see how github history can be exploited and I was reading [H
 
 The original hardcoded the `$Y` so I'm using [`date +"%Y"`](https://renenyffenegger.ch/notes/Linux/shell/commands/date) to retrieve present year and storing in `$CURRENT` and then using that to set `$START_Y` and `$END_Y`. 
 
-The original also used `{..}` to set a range but that proved problematic when trying to access variables. After reading this StackOverflow post, [How do I iterate over a range of numbers defined by variables in Bash?](https://stackoverflow.com/questions/169511/how-do-i-iterate-over-a-range-of-numbers-defined-by-variables-in-bash), I opted to create a for-loop allowing me to use dynamic variables:
+The original also used [brace expansion](http://www.gnu.org/software/bash/manual/bashref.html#Brace-Expansion) `{..}` to set a range but that proved problematic when trying to access variables. After reading this StackOverflow post, [How do I iterate over a range of numbers defined by variables in Bash?](https://stackoverflow.com/questions/169511/how-do-i-iterate-over-a-range-of-numbers-defined-by-variables-in-bash), I opted to create a `for loop` using *arithmetic expression* i/o a `for-in loop` allowing me to use dynamic variables:
 
 ```bash
+CURRENT=$(date +"%Y")
+START_Y=$(($CURRENT - 1))
+END_Y=$(($CURRENT + 1))
+
 for ((Y=START_Y; Y<=END_Y; Y++))
 do
   mkdir $Y
   cd $Y
   ...
-end
+done
 ```
 
+...and then because I like `while loops` more:
 
+```bash
+CURRENT=$(date +"%Y")
+Y=$(($CURRENT - 1))
+END_Y=$(($CURRENT + 1))
+
+while ((Y<=END_Y))
+do
+  mkdir $Y
+  cd $Y
+  ...
+  Y++
+done
+```
+
+** Next up, will need to address `git rm -rf` for removing directories dynamically.
 
 Eventually will have GitHub Octocat running as [gitfiti art](https://github.com/ThuyNT13/gitfiti) soon with the following template because who doesn't want octocat to populate their git history.
 
