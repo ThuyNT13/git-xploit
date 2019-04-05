@@ -1,7 +1,7 @@
 CURRENT=$(date +"%Y")
-START_Y=$(($CURRENT - 1))
-END_Y=$(($CURRENT + 1))
-Y=$START_Y
+OFFSET=10
+Y=$(($CURRENT - $OFFSET))
+END_Y=$(($CURRENT + $OFFSET))
 
 mkdir commits
 cd commits
