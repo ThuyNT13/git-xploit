@@ -1,7 +1,4 @@
-# from https://hackernoon.com/how-to-hack-github-kind-of-12b08a46d02e
-# for the fun of messing with git history
-
-for Y in {2000..2020}
+for Y in {2017..2019}
 do
   mkdir $Y
   cd $Y
@@ -16,9 +13,10 @@ do
       for i in {01..12}
       do
         echo "$i on $M/$D/$Y" > commit.md
-        export GIT_COMMITTER_DATE="$Y-$M-$D 12:00:00"
-        export GIT_AUTHOR_DATE="$Y-$M-$D 12:00:00"
-        git commit --date="$Y-$M-$D 12:00:00" -m "$i on $M $D $Y"
+        export GIT_COMMITTER_DATE="$Y-$M-$D 12:$i:00"
+        export GIT_AUTHOR_DATE="$Y-$M-$D 12:$i:00"
+        git add commit.md -f
+        git commit --date="$Y-$M-$D 12:$i:00" -m "$i on $M $D $Y"
       done
       cd ../
     done

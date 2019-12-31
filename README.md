@@ -1,6 +1,6 @@
 Because I wanted to see how github history can be exploited and I was reading [How to Hack GitHub (kind of)](https://hackernoon.com/how-to-hack-github-kind-of-12b08a46d02e).
 
-Eventually have GitHub Octocat running as [gitfitti art](https://codepen.io/ngott13/pen/eoZrZb) soon with this template:
+Eventually have GitHub Octocat running as [gitfiti art](https://codepen.io/ngott13/pen/eoZrZb) soon with this template:
 
 ```js
 :template
