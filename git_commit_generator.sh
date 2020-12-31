@@ -1,7 +1,10 @@
 CURRENT=$(date +"%Y")
 START_Y=$(($CURRENT - 1))
 END_Y=$(($CURRENT + 1))
-Y=START_Y
+Y=$START_Y
+
+mkdir commits
+cd commits
 
 while ((Y<=END_Y))
 do
@@ -30,9 +33,9 @@ do
   cd ../
   ((Y++))
 done
+
+cd ../
 git push
-git rm -rf $START_Y
-git rm -rf $CURRENT
-git rm -rf $END_Y
+git rm -rf commits
 git commit -am "cleanup"
 git push
