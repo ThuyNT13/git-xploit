@@ -1,8 +1,8 @@
 CURRENT=$(date +"%Y")
-START_Y=$(($CURRENT - 1))
+Y=$(($CURRENT - 1))
 END_Y=$(($CURRENT + 1))
 
-for ((Y=START_Y; Y<=END_Y; Y++))
+while ((Y<=END_Y))
 do
   mkdir $Y
   cd $Y
@@ -27,8 +27,11 @@ do
     cd ../
   done
   cd ../
+  ((Y++))
 done
 git push
-git rm -rf 20**
+git rm -rf $CURRENT
+git rm -rf $Y
+git rm -rf $END_Y
 git commit -am "cleanup"
 git push

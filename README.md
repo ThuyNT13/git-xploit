@@ -21,7 +21,7 @@ done
 
 ```bash
 CURRENT=$(date +"%Y")
-Y=$(($CURRENT - 1))
+let Y=$(($CURRENT - 1))
 END_Y=$(($CURRENT + 1))
 
 while ((Y<=END_Y))
@@ -29,7 +29,7 @@ do
   mkdir $Y
   cd $Y
   ...
-  Y++
+  ((Y++))
 done
 ```
 
