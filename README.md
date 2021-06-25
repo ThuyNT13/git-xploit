@@ -14,6 +14,9 @@ Next step is to have GitHub Octocat as [gitfiti art](https://github.com/ThuyNT13
 ```
 
 Run this :)
+
+Note to self (20210625):  Surprisingly, this very small project to hack the git commit earned me an [**Arctic Code Vault**](https://hackernoon.com/github-arctic-code-vault-overview-eed3tgm) badge. Life is strange...
+
 ---
 
 Download into your local machine:   
